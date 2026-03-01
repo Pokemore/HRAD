@@ -1,0 +1,16 @@
+requests==2.32.4
+filelock==3.16.1
+tqdm==4.67.1
+timm==0.6.13
+mmcv-full==1.7.2
+mmsegmentation==0.30.0
+ftfy==6.2.3
+regex==2024.11.6
+scipy==1.10.1
+scikit-image==0.21.0
+pycocotools==2.0.7
+opencv-python==4.12.0.88
+tokenizers==0.13.3
+safetensors==0.3.3
+h5py==3.11.0
+nltk==3.9.1

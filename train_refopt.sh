@@ -1,26 +1,29 @@
+#!/bin/sh
+
 set -euo pipefail
 
 # Activate your conda environment.
-source /path/to/conda/bin/activate <ENV_NAME>
+# source /path/to/conda/bin/activate <ENV_NAME>
+source /opt/conda/bin/activate HRAD
 
 # Repository root and working directory.
-ROOT="/path/to/HRAD"
-cd "${ROOT}/main"
+ROOT="/root/Documents/Code/HRAD"
+cd "${ROOT}"
 
 # GPU selection (comma-separated). Adjust to your hardware.
 export CUDA_VISIBLE_DEVICES=0,1,2,3
 
 # NLTK data path (optional). Leave empty if not used.
-export NLTK_DATA="/path/to/nltk_data"
+export NLTK_DATA="/root/Documents/Package/NLTK"
 
 export PYTHONUNBUFFERED=1
 
 # Pretrained weights (required).
-SWIN_WEIGHTS="/path/to/swin_base_patch4_window12_384_22k.pth"
-BERT_WEIGHTS="/path/to/bert-base-uncased"
+SWIN_WEIGHTS="/root/Documents/PreTrained/Swin/swin_base_patch4_window12_384_22k.pth"
+BERT_WEIGHTS="/root/Documents/PreTrained/BERT/bert-base-uncased"
 
 # Output directory for logs and checkpoints.
-OUTPUT_DIR="/path/to/experiments/HRAD_GPG"
+OUTPUT_DIR="/root/Documents/Result"
 MODEL_ID="HRAD_GPG"
 
 mkdir -p "${OUTPUT_DIR}"

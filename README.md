@@ -22,7 +22,7 @@ Official implementation of **"HRAD: Towards Region-Adaptive Disentanglement for 
 ## 🚀Contributions
 
 <figure align="center">
-  <img src="Pic/Overall.png" alt="Overall Framework" width="800">
+  <img src="Figure/Overall.png" alt="Overall Framework" width="800">
   <figcaption><em>Figure: Overall structure of HRAD.</em></figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ RefOPT is a remote-sensing dataset for language-guided object localization/segme
 
 ### 🖼️ Examples
 <figure align="center">
-  <img src="Pic/Example.png" alt="Qualitative examples" width="800">
+  <img src="Figure/Example.png" alt="Qualitative examples" width="800">
   <figcaption><em>Figure: Qualitative examples / dataset samples .</em></figcaption>
 </figure>
 
@@ -162,4 +162,3 @@ Edit `/path/to/HRAD/test.sh` to match your environment (checkpoint path, dataset
 ```bash
 bash /path/to/HRAD/test.sh
 ```
-
